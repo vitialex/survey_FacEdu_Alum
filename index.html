@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey IDEL</title>
+</head>
+<body>
+<div>
+    <h1>Español</h1>
+    <button><a href="http://www.facebook.com">Ir a la encuesta</a></button>
+</div>
+<div>
+    <h1>Català</h1>
+    <button><a href="http://www.x.com">Anar a la enquesta</a></button>
+</div>
+<div>
+    <h1>English</h1>
+    <button><a href="http://www.google.com">Go to survey</a></button>
+</div>
+<script>
+    // Función para mezclar elementos
+    function shuffleDivs() {
+        const divs = Array.from(document.querySelectorAll('div'));
+        divs.sort(() => Math.random() - 0.5);
+        divs.forEach(div => document.body.appendChild(div));
+    }
+
+    // Llamar a la función cuando se cargue la página
+    window.onload = shuffleDivs;
+</script>
+</body>
+</html>
